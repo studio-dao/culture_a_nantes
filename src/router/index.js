@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "../App.vue";
-
+import MusiquesActuelles from "../views/musiques_actuelles.vue";
 
 Vue.use(VueRouter);
 
@@ -12,6 +12,11 @@ const routes = [
     component: App,
   },
 
+  {
+    path: "/musiquesactuelles",
+    name: "MusiquesActuelles",
+    component: MusiquesActuelles,
+  },
 ];
 
 const router = new VueRouter({

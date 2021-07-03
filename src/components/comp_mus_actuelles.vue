@@ -1,37 +1,37 @@
 <template>
-  <div class="mus_act_main">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Évènement</th>
-          <th scope="col">Lieu</th>
-          <th scope="col">horaires</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="event in MusActEvents" v-bind:key="event.id">
-          <th scope="row">1</th>
-          <td>{{ event.nom }}</td>
-          <td>{{ event.lieu }}</td>
-          <td>{{ event.horaires}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Évènement</th>
+        <th scope="col">Lieu</th>
+        <th scope="col">horaires</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="event in MusActEvents" v-bind:key="event.id">
+        <th scope="row">1</th>
+        <td>nom1</td>
+        <td>lieu1</td>
+        <td>horaires1</td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 
 <!-- SCRIPT -->
 <script>
-import axios from "axios";
+/* import axios from "axios"; */
 
 export default {
-  name: "MusiquesActuelles",
+  name: "CompMusActuelles",
   data() {
     return {
       MusActEvents: [],
     };
   },
+};
 
+/*
   mounted() {
     axios
       .get(
@@ -44,7 +44,7 @@ export default {
         );
       });
   },
-};
+  */
 </script>
 
 <!-- STYLE -->

@@ -1,19 +1,18 @@
 <template>
   <div id="app">
     <Header />
-    <MusiquesActuelles/>
+    <router-view/>
   </div>
 </template>
 
 <script>
 import Header from "../src/components/header.vue";
-import MusiquesActuelles from "../src/views/musiques_actuelles.vue";
 
 export default {
   name: "App",
   components: {
-    Header,
-    MusiquesActuelles,
+    Header
+
   },
 };
 </script>
