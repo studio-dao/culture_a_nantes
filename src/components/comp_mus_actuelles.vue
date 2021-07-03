@@ -8,7 +8,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="event in MusActEvents" v-bind:key="event.id">
+      <tr>
         <th scope="row">1</th>
         <td>nom1</td>
         <td>lieu1</td>

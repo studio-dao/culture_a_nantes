@@ -1,21 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import App from "../App.vue";
-import MusiquesActuelles from "../views/musiques_actuelles.vue";
+import Home from "../views/cants_home.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "App",
-    component: App,
-  },
-
-  {
-    path: "/musiquesactuelles",
-    name: "MusiquesActuelles",
-    component: MusiquesActuelles,
+    name: "Home",
+    component: Home,
   },
 ];
 

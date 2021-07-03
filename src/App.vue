@@ -1,23 +1,41 @@
 <template>
   <div id="app">
     <Header />
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import Header from "../src/components/header.vue";
-
+import Header from "./components/header.vue";
 export default {
   name: "App",
   components: {
-    Header
-
+    Header,
   },
 };
 </script>
 
 <style>
+@font-face {
+  font-family: "LG.B";
+  src: local("LetterGothicStd-Bold"),
+    url(./assets/fonts/LetterGothicStd-Bold.otf) format("otf");
+}
+@font-face {
+  font-family: "LG.BS";
+  src: local("LetterGothicStd-BoldSlanted"),
+    url(./assets/fonts/LetterGothicStd-BoldSlanted.otf) format("otf");
+}
+@font-face {
+  font-family: "LG.S";
+  src: local("LetterGothicStd-Slanted"),
+    url(./assets/fonts/LetterGothicStd-Slanted.otf) format("otf");
+}
+@font-face {
+  font-family: "LG";
+  src: local("LetterGothicStd"),
+    url(./assets/fonts/LetterGothicStd.otf) format("otf");
+}
 #app {
   width: 100%;
   height: 100%;
